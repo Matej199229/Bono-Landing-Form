@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 64, 50, 0.8), rgba(71, 17, 116, 0.9)), url(/My-Challenges-Projects/Challenges/LandingFormMiniProject/images/background.jpg) no-repeat center/cover;  
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.header-right {
+    display: flex;
+    gap: 25px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.header-right a {
+    color: #fff;
+}
+
+.header-right a:hover {
+    color: purple;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    max-width: 1100px;
+    height: 100%;
+    gap: 50px;
+    margin: 200px auto;
+    padding: 0px 40px;
+}
+
+.main-text {
+   flex: 1; 
+   margin-top: 50px;
+}
+
+.text-title {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.text-info {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+form {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color:#fff;
+    font-size: medium;
+    outline: 0;
+}
+
+.form-group textarea {
+    border-radius: 5px;
+    border: none;
+    padding: 30px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color:#fff;
+    font-size: large;
+    outline: 0;
+    resize: none;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ff4032;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff5c4d;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .header-right {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+    }
+
+    .text-title {
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .text-info {
+        display: none;
+    }
+
+    form {
+        width:100%;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-height: 500px) {
+    .main-content {
+        margin: 0 auto;
+    }
+
+    .text-title {
+        font-size: 2.3rem;
+    }
+}
